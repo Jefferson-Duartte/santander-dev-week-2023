@@ -1,0 +1,48 @@
+# santander dev week 2023
+Java RESTful API for Santander Dev Week 2023
+
+## Diagrama de Classes
+
+```mermaid
+classDiagram
+  class User {
+    id: int
+    name: string
+    account: Account
+    card: Card
+    features: Feature[]
+    news: News[]
+  }
+
+  class Account {
+    id: int
+    number: string
+    agency: string
+    balance: float
+    limit: float
+  }
+
+  class Card {
+    id: int
+    number: string
+    limit: float
+  }
+
+  class Feature {
+    id: int
+    icon: string
+    description: string
+  }
+
+  class News {
+    id: int
+    icon: string
+    description: string
+  }
+
+  User --|> Account
+  User --|> Card
+  User --|> Feature
+  User --|> News
+
+``` 
