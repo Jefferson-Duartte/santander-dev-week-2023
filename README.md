@@ -1,4 +1,4 @@
-# santander dev week 2023
+# Santander Dev Week 2023
 Java RESTful API for Santander Dev Week 2023
 
 ## Diagrama de Classes
